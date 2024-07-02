@@ -1,4 +1,14 @@
-customers{}
+const customers= [
+
+
+    {
+        name: "Isira",
+        age: 23 ,
+        address:"Kelaniya" 
+
+
+    }
+]
 
 function addCustomer() {
 
@@ -6,5 +16,12 @@ function addCustomer() {
     let age = document.getElementById("txtAge").value;
     let address = document.getElementById("txtAddress").value;
 
-    console.log(name);
+    customers.push({
+
+        name,
+        age,
+        address
+    })
+
+    console.log(customers);
 }
